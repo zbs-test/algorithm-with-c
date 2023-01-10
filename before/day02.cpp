@@ -14,6 +14,8 @@ public:
 };
 int main(){
 	// 我不知道shared_ptr 是什么,但是我想尝鲜
+	
 	std::shared_ptr<Test> ptr = make_shared<Test>();
 	cout << ptr->say_hello()<< endl;
+	cout << Test::say_hello() << endl;//调用静态使用::
 }
