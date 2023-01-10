@@ -53,4 +53,6 @@ int main() {
 	class Son* song = new Son();//当使用默认的构造函数，Father必须含有默认的构造函数
 	//song->what_if_be_public = 1;// 即使是公有继承，protected private 依然不会继承为public 
 	cout << song->hey_I_am_public << endl;
+	delete s,ss,father,song;
+	
 }
