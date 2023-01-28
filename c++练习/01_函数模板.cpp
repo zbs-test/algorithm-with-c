@@ -1,3 +1,4 @@
+// #!看注释
 #include <iostream>
 
 /*模板种类---泛型为了函数和类(对象)
@@ -23,7 +24,7 @@ inline const T &Max(const T &a, const T &b, const T &c) // const 接近类型名
 int main(int argc, char const *argv[])
 {
     using namespace std;
-    int a = Max(1, 2);
+    int a = Max(1, 2);//函数优先调用本地普通函数，模板函数调用有时间开销
     cout << a << endl;
 
     int i = 7, j = 30;
